@@ -1,20 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  vite: {
-    optimizeDeps: {
-      include: [
-        '@vue/devtools-core',
-      ]
-    }
-  },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/icon/module"],
+  compatibilityDate: "2025-07-15",
+  devtools: { enabled: false },
   googleFonts: {
     families: {
-      'Space Grotesk': [300, 400, 500, 600, 700]
+      "Space Grotesk": [300, 400, 500, 600, 700],
     },
-    display: 'swap',
-    download: true
-  }
-})
+    display: "swap",
+    download: true,
+  },
+});
