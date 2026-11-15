@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full h-dvh overflow-hidden bg-obsidian">
+  <section class="relative w-full h-dvh overflow-hidden">
     <div
       class="absolute inset-0 bg-[url('https://res.cloudinary.com/daxdlio4e/image/upload/v1794204865/quality_restoration_20261109131038529_v9mze1.jpg')] md:bg-[url('https://res.cloudinary.com/daxdlio4e/image/upload/v1794204860/quality_restoration_20261109131107325_ywei3p.jpg')] bg-cover bg-top brightness-[.30] z-0"
     ></div>
@@ -22,14 +22,25 @@
         Terangi Harimu <br />
         Dengan Senyum Karamelku.
       </h1>
-    </div>
-    <div
-      class="absolute bottom-[10%] lg:bottom-[7%] justify-center w-full flex z-10"
-    >
-      <div
-        class="bg-obsidian justify-center flex border-brass border-[1px] p-1 rounded-full animate-bounce"
-      >
-        <Icon name="mdi:arrow-down" class="text-brass text-2xl" />
+      <div class="flex flex-row gap-3 mt-3 md:mt-4">
+        <div
+          class="flex bg-brass border-brass border-2 rounded-lg items-center cursor-pointer"
+        >
+          <NuxtLink
+            class="px-3 py-2 text-sm md:text-lg font-semibold text-onyx"
+          >
+            Profil Freya
+          </NuxtLink>
+        </div>
+        <div
+          class="flex border-brass border-2 hover:bg-brass group rounded-lg items-center transition-all duration-300 cursor-pointer"
+        >
+          <NuxtLink
+            class="px-3 py-2 text-sm md:text-lg font-semibold text-brass group-hover:text-onyx transition-all duration-300"
+          >
+            Perjalanan Freya
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </section>
