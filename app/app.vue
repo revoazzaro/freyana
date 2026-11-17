@@ -4,7 +4,7 @@ import Navbar from "./components/navbar.vue";
 </script>
 
 <template>
-  <div class="bg-obsidian text-parchment">
+  <div class="bg-obsidian text-parchment selection:bg-brass selection:text-parchment">
     <Navbar />
     <NuxtPage />
   </div>
